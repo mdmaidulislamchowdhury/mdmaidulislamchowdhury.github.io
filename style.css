@@ -1,0 +1,349 @@
+/* ─────────────────────────────────────────────
+   BASE
+   ───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ink:       #1a1a18;
+  --ink-soft:  #4a4a46;
+  --ink-muted: #7a7a74;
+  --rule:      #ddddd8;
+  --accent:    #2a52a0;
+  --accent-hover: #1c3d80;
+  --bg:        #faf9f7;
+  --max-width: 740px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+
+/* ─────────────────────────────────────────────
+   HEADER / NAV
+   ───────────────────────────────────────────── */
+header {
+  border-bottom: 1px solid var(--rule);
+  padding: 0.75rem 2rem;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 10;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-decoration: none;
+  letter-spacing: 0.01em;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+
+/* ─────────────────────────────────────────────
+   MAIN LAYOUT
+   ───────────────────────────────────────────── */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 2rem 4rem;
+}
+
+section {
+  padding: 2.5rem 0;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--rule);
+}
+
+
+/* ─────────────────────────────────────────────
+   TYPOGRAPHY
+   ───────────────────────────────────────────── */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 1.75rem;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
+}
+
+h3 a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+h3 a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: var(--ink-soft);
+  margin-bottom: 0.8rem;
+}
+
+a {
+  color: var(--accent);
+}
+
+
+/* ─────────────────────────────────────────────
+   HERO SECTION
+   ───────────────────────────────────────────── */
+.hero {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  padding-top: 1.5rem;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-photo {
+  flex-shrink: 0;
+}
+
+.hero-photo img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid var(--rule);
+  display: block;
+}
+
+.tagline {
+  font-style: italic;
+  color: var(--ink-muted);
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.bio {
+  font-size: 0.97rem;
+}
+
+.hero-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border: 1px solid var(--rule);
+  padding: 0.35rem 0.9rem;
+  border-radius: 4px;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.btn:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+
+/* ─────────────────────────────────────────────
+   PAPERS / PROJECTS
+   ───────────────────────────────────────────── */
+.paper {
+  margin-bottom: 2.25rem;
+}
+
+.meta {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  color: var(--ink-muted);
+  margin-bottom: 0.4rem;
+}
+
+details {
+  margin: 0.5rem 0 0.6rem;
+}
+
+details summary {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink-muted);
+  cursor: pointer;
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+details summary::-webkit-details-marker { display: none; }
+
+details summary::before {
+  content: '▸';
+  font-size: 11px;
+  transition: transform 0.15s;
+  display: inline-block;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+details[open] summary {
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+details p {
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  border-left: 2px solid var(--rule);
+  padding-left: 1rem;
+  margin-left: 0.2rem;
+}
+
+.paper-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.paper-links a {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--accent);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+
+.paper-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* ─────────────────────────────────────────────
+   TEACHING
+   ───────────────────────────────────────────── */
+.teaching-block {
+  margin-bottom: 2rem;
+}
+
+.teaching-block h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.75rem;
+}
+
+.teaching-block ul {
+  list-style: none;
+  padding: 0;
+}
+
+.teaching-block li {
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+  padding: 0.35rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.teaching-block li:last-child {
+  border-bottom: none;
+}
+
+
+/* ─────────────────────────────────────────────
+   CONTACT
+   ───────────────────────────────────────────── */
+#contact p {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+
+/* ─────────────────────────────────────────────
+   FOOTER
+   ───────────────────────────────────────────── */
+footer {
+  border-top: 1px solid var(--rule);
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+footer p {
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
+
+/* ─────────────────────────────────────────────
+   RESPONSIVE — mobile
+   ───────────────────────────────────────────── */
+@media (max-width: 600px) {
+  h1 { font-size: 1.6rem; }
+
+  .hero {
+    flex-direction: column-reverse;
+    gap: 1.5rem;
+  }
+
+  .hero-photo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  nav { gap: 1rem; }
+
+  main { padding: 2rem 1.25rem 3rem; }
+}
