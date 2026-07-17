@@ -136,13 +136,18 @@ a {
    ───────────────────────────────────────────── */
 .hero {
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
   align-items: flex-start;
   padding-top: 1.5rem;
 }
 
-.hero-text {
-  flex: 1;
+.hero-left{
+    width:320px;
+    flex-shrink:0;
+}
+
+.hero-right{
+    flex:1;
 }
 
 .hero-photo {
