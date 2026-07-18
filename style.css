@@ -15,7 +15,7 @@
   --accent:    #2a52a0;
   --accent-hover: #1c3d80;
   --bg:        #faf9f7;
-  --max-width: 740px;
+  --max-width: 1150px;
 }
 
 html {
@@ -142,21 +142,30 @@ a {
 }
 
 .hero-left{
-    width:320px;
+    width:380px;
     flex-shrink:0;
+}
+
+.hero-left h1 {
+    white-space: nowrap;
+    font-size: 2.6rem;
+    line-height: 1.15;
+    margin-bottom: 0;
 }
 
 .hero-right{
     flex:1;
 }
 
-.hero-photo {
-  flex-shrink: 0;
+.hero-photo{
+    display:flex;
+    justify-content:center;
+
 }
 
 .hero-photo img {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--rule);
