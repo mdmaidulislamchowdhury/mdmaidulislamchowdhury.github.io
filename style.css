@@ -11,7 +11,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{background:var(--bg);color:var(--text);font-family:"Source Serif 4",serif;font-size:18px;line-height:1.75;}
+body{background:var(--bg);color:var(--text);font-family:"Source Serif 4",serif;font-size:14px;line-height:1.75;}
 a{color:var(--accent);text-decoration:none;}
 a:hover{color:var(--accent-hover);}
 header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid var(--rule);}
@@ -21,7 +21,29 @@ main.layout{max-width:var(--max-width);margin:auto;padding:50px 30px;display:gri
 .sidebar{position:sticky;top:100px;text-align:center;align-self:start;}
 .sidebar h1{font-family:Inter,sans-serif;font-size:2rem;font-weight:600;line-height:1.2;white-space:nowrap;letter-spacing:-0.02em;}
 .name-divider{border:none;border-top:2px solid var(--rule);margin:18px 0 38px;}
-.hero-photo img{width:250px;height:250px;border-radius:50%;object-fit:cover;border:3px solid #d8d8d8;}
+/* ==========================================================
+   PROFILE PHOTO
+   Displays a rectangular portrait instead of a circular image.
+========================================================== */
+
+.hero-photo img{
+
+    /* Width of the displayed photo */
+    width:260px;
+
+    /* Height of the displayed photo */
+    height:340px;
+
+    /* Small rounded corners (set to 0 for sharp corners) */
+    border-radius:8px;
+
+    /* Keeps the image proportions while filling the frame */
+    object-fit:cover;
+
+    /* Light gray border around the photograph */
+    border:3px solid #d8d8d8;
+
+}
 .content{min-width:0;}
 .content h2{font-family:Inter,sans-serif;font-size:2rem;margin-bottom:25px;}
 .bio{margin-bottom:22px;text-align:justify;}
