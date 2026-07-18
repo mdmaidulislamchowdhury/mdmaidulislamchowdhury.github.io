@@ -35,13 +35,13 @@ main.layout{max-width:var(--max-width);margin:auto;padding:50px 30px;display:gri
     height:340px;
 
     /* Small rounded corners (set to 0 for sharp corners) */
-    border-radius:8px;
+    border-radius:0px;
 
     /* Keeps the image proportions while filling the frame */
     object-fit:cover;
 
     /* Light gray border around the photograph */
-    border:3px solid #d8d8d8;
+    border:2px solid #d8d8d8;
 
 }
 .content{min-width:0;}
