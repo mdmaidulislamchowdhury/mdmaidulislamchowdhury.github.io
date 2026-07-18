@@ -7,7 +7,7 @@
 --accent:#0056a3;
 --accent-hover:#003f77;
 --button:#f6f7f9;
---max-width:1180px;
+--max-width:1280px;
 }
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
@@ -17,9 +17,9 @@ a:hover{color:var(--accent-hover);}
 header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid var(--rule);}
 nav{max-width:var(--max-width);margin:auto;display:flex;justify-content:center;gap:40px;padding:18px 25px;}
 nav a{font-family:Inter,sans-serif;font-size:15px;font-weight:500;color:#444;}
-main.layout{max-width:var(--max-width);margin:auto;padding:50px 30px;display:grid;grid-template-columns:340px 1fr;gap:70px;align-items:start;}
+main.layout{max-width:var(--max-width);margin:auto;padding:50px 30px;display:grid;grid-template-columns:420px 1fr;gap:70px;align-items:start;}
 .sidebar{position:sticky;top:100px;text-align:center;align-self:start;}
-.sidebar h1{font-family:Inter,sans-serif;font-size:2.3rem;line-height:1.2;}
+.sidebar h1{font-family:Inter,sans-serif;font-size:2rem;font-weight:600;line-height:1.2;white-space:nowrap;}
 .name-divider{border:none;border-top:2px solid var(--rule);margin:18px 0 38px;}
 .hero-photo img{width:250px;height:250px;border-radius:50%;object-fit:cover;border:3px solid #d8d8d8;}
 .content{min-width:0;}
