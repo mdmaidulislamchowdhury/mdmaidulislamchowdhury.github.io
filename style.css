@@ -19,7 +19,7 @@ nav{max-width:var(--max-width);margin:auto;display:flex;justify-content:center;g
 nav a{font-family:Inter,sans-serif;font-size:15px;font-weight:500;color:#444;}
 main.layout{max-width:var(--max-width);margin:auto;padding:50px 30px;display:grid;grid-template-columns:420px 1fr;gap:70px;align-items:start;}
 .sidebar{position:sticky;top:100px;text-align:center;align-self:start;}
-.sidebar h1{font-family:Inter,sans-serif;font-size:2rem;font-weight:600;line-height:1.2;white-space:nowrap;}
+.sidebar h1{font-family:Inter,sans-serif;font-size:2rem;font-weight:600;line-height:1.2;white-space:nowrap;letter-spacing:-0.02em;}
 .name-divider{border:none;border-top:2px solid var(--rule);margin:18px 0 38px;}
 .hero-photo img{width:250px;height:250px;border-radius:50%;object-fit:cover;border:3px solid #d8d8d8;}
 .content{min-width:0;}
