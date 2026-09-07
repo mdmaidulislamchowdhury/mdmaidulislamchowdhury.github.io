@@ -61,6 +61,7 @@ hr{border:none;border-top:1px solid var(--rule);margin:70px 0;}
 #contact p{margin-bottom:14px;}
 #contact i{width:25px;color:var(--accent);}
 footer{border-top:1px solid var(--rule);margin-top:80px;padding:35px;text-align:center;color:#666;font-size:15px;}
+#contact{padding-bottom:300px;}
 @media(max-width:900px){
 main.layout{grid-template-columns:1fr;padding:30px 20px;}
 .sidebar{position:static;}
