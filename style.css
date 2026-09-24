@@ -58,6 +58,9 @@ hr{border:none;border-top:1px solid var(--rule);margin:70px 0;}
 .journal{font-size:.96rem;color:#555;}
 .authors{font-size:.88rem;color:#777;font-style:italic;margin-bottom:18px;}
 .teaching-block ul{margin-left:22px;}
+.university-gap{
+  margin-top:30px;
+}
 #contact p{margin-bottom:14px;}
 #contact i{width:25px;color:var(--accent);}
 footer{border-top:1px solid var(--rule);margin-top:80px;padding:35px;text-align:center;color:#666;font-size:15px;}
